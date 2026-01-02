@@ -1,0 +1,26 @@
+{
+  "name": "climbingcomp",
+  "version": "1.0.0",
+  "description": "app for climbing competition",
+  "keywords": [
+    "bouldering",
+    "islandcrown",
+    "climbing",
+    "competition"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/krummus/climbingcomp"
+  },
+  "license": "ISC",
+  "author": "Ashley Howard",
+  "type": "graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.2.0",
+    "graphql": "^16.12.0"
+  }
+}
