@@ -2,9 +2,9 @@
 export const typeDef = `
   type Competition {
     id: String!
-    firstName: String
-    lastName: String
-    books: [Book]
+    category: String!
+    users: [Users]
+    segments: [Segments]
   }
 `;
 

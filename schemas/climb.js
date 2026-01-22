@@ -2,9 +2,18 @@
 export const typeDef = `
   type Climb {
     id: String!
-    firstName: String
-    lastName: String
-    books: [Book]
+    colour: String!
+    difficulty: Int!
+    classificationsys: Int!
+    brand: String
+    style: String
+    locationsvg: String
+    setter: [Setter!]
+    athletesattempts: Int
+    athletescompleted: Int
+    active: Boolean!
+    startDate: Date!
+    endDate: Date!
   }
 `;
 

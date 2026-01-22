@@ -1,10 +1,19 @@
+// session attempts
 // attempt.js
 export const typeDef = `
   type Attempt {
     id: String!
-    firstName: String
-    lastName: String
-    books: [Book]
+    date: Date!
+    user: User!
+    climb: Climb!
+    Zoned: Boolean
+    ZonedAttempts: Int
+    Completed: Boolean
+    CompletedAttempts: Int
+    AdditionalClimbs: Int
+    Referee: Boolean
+    Refereeid: User
+    Refereesign: Boolean
   }
 `;
 

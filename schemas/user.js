@@ -2,9 +2,19 @@
 export const typeDef = `
   type User {
     id: String!
+    passwordHash: String!
     firstName: String
     lastName: String
-    books: [Book]
+    email: String
+    emergency: Contact
+    admin: Boolean
+    official: Boolean
+    moderator: Boolean
+    setter: Boolean
+    climbattempts: [attempts]
+    competition: [competitions]
+    membershipid: String
+    scaid: String
   }
 `;
 

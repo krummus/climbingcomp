@@ -2,9 +2,11 @@
 export const typeDef = `
   type Segment {
     id: String!
-    firstName: String
-    lastName: String
-    books: [Book]
+    name: name!
+    active: Boolean!
+    climbs: [Climbs]
+    competitors: [User]
+    refereed: Boolean
   }
 `;
 

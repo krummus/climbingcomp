@@ -2,9 +2,13 @@
 export const typeDef = `
   type Event {
     id: String!
-    firstName: String
-    lastName: String
-    books: [Book]
+    name: String!
+    gym: Gym!
+    competitions: [Competition]
+    eventadmin: [User]
+    eventreferee: [User]
+    startDate: Date
+    endDate: Date
   }
 `;
 

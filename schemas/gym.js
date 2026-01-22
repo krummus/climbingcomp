@@ -2,9 +2,15 @@
 export const typeDef = `
   type Gym {
     id: String!
-    firstName: String
-    lastName: String
-    books: [Book]
+    name: String!
+    address: String
+    contactno: String
+    contactemail:String
+    gpslocation: String
+    gymmap: String
+    events: [Event]
+    moderators: [User]
+    admin: [User]
   }
 `;
 
