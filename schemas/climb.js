@@ -1,5 +1,13 @@
 // climb.js
 export const typeDef = `
+  extend type Query {
+    allEvents: [Event]
+    findEventByName(name: String!): [Event]
+    findEventByGymId(gymid: String!): [Event]
+    findEventByLocation(location: String!): [Event]
+    findEventByActive(active: Boolean!): [Event]
+  }
+
   type Climb {
     id: String!
     colour: String!
@@ -8,7 +16,7 @@ export const typeDef = `
     brand: String
     style: String
     locationsvg: String
-    setter: [Setter!]
+    setter: [User!]
     athletesattempts: Int
     athletescompleted: Int
     active: Boolean!

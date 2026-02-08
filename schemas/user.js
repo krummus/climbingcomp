@@ -19,7 +19,16 @@ export const typeDef = `
 `;
 
 export const resolvers = {
+  Query: {
+    userCount: () => users.length,
+    allUsers: (root, args) => {
+      
+    }
+  },
   User: {
     user: () => { },
+  },
+  Mutation: {
+
   }
 }

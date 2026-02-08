@@ -1,6 +1,14 @@
 // session attempts
 // attempt.js
 export const typeDef = `
+  extend type Query {
+    allEvents: [Event]
+    findEventByName(name: String!): [Event]
+    findEventByGymId(gymid: String!): [Event]
+    findEventByLocation(location: String!): [Event]
+    findEventByActive(active: Boolean!): [Event]
+  }
+
   type Attempt {
     id: String!
     date: Date!
