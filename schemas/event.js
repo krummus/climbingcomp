@@ -12,24 +12,24 @@ export const typeDef = `
     addEvent(
       name: String!
       gymId: String
-      eventadmin: User
+      eventadmin: [User]
     ): Event
     editEvent(
+      id: String!
       name: String!
-      address: String
-      contactno: String
-      contacntemail: String
-      gpslocation: String
-      gymmap: String
+      gym: Gym!
+      competitions: [Competition]
+      eventadmin: [User]
+      eventreferee: [User]
       startDate: Date
       endDate: Date
       active: Boolean
     ): Event
     addEventModerator:(
-      userId: User!
+      userId: [User]!
     ): Event
     addEventAdmin: (
-      userId: User!
+      userId: [User]!
     ): Event
   }
 
